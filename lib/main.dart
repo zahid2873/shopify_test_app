@@ -17,18 +17,7 @@ Future<void> main() async {
   //await dotenv.load(fileName: '.env.example');
 
   ShopifyConfig.setConfig(
-    storefrontAccessToken: 'bc29b5d8a0c3aa5b26351e0c7798e88c' ?? '',
-    storeUrl: '6aef0b-62.myshopify.com' ?? '',
-    adminAccessToken: 'ADMIN_ACCESS_TOKEN',
-    storefrontApiVersion: '2024-07',
-    cachePolicy: CachePolicy.networkOnly,
-    //language: dotenv.env['COUNTRY_LOCALE'],
-    // storefrontAccessToken: dotenv.env['bc29b5d8a0c3aa5b26351e0c7798e88c'] ?? '',
-    // storeUrl: dotenv.env['6aef0b-62.myshopify.com'] ?? '',
-    // adminAccessToken: dotenv.env['ADMIN_ACCESS_TOKEN'],
-    // storefrontApiVersion: dotenv.env['STOREFRONT_API_VERSION'] ?? '2023-07',
-    // cachePolicy: CachePolicy.networkOnly,
-     language: 'env',
+  
   );
 
   runApp(const MyApp());
